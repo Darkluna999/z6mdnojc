@@ -1,7 +1,3 @@
----
-date: 2022-03-19 03:51
----
-#Software/Obsidian 
 # 前置设置
 此处路径自定义，如需使用模板需将模板放在模板文件夹
  ![mdnote初始设置][1]
@@ -100,12 +96,12 @@ date: 2022-03-19 03:51
 | extensions.zotfile.pdfExtraction.formatAnnotationHighlight | `<p>"%(content)" (%(cite))</p>`                                         | `<p>* "%(content)"<a href="%(uri)">p.%(page)</a></p>`                       |
 | extensions.zotfile.pdfExtraction.formatNoteTitleColor      | `<p><b>%(color) Annotations (%(date))</b></p>`                          | `<p><h2><b><font color="%(color)">%(color) Annotations</font></b></h2></p>#%(color)` |
 | extensions.zotfile.pdfExtraction.colorNotes                | `false`                                                                 | `true`                                                                      |
-|                                                            |                                                                         |                                                                             |
-
 
 ## zotero原生提取
-- 原生提取开启引用高亮--注意每次提取之后都得手动开一下，我还没找到能一直开的方法
- ![][4]
+- 原生提取开启引用高亮--注意每次提取之后都得手动开一下
+   我还没找到能一直开的方法...在找了，别骂了
+  ![][4]
+  
 ### 变更条目
 | 条目                                                  | 修改前                                                             | 修改后                                                             |
 | ----------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
