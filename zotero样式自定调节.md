@@ -1,3 +1,9 @@
+---
+date: 2022年03月19
+uid: 2022-03-19-0351
+tags: Software/Obsidian 
+---
+
 # 前置设置
 此处路径自定义，如需使用模板需将模板放在模板文件夹
  ![mdnote初始设置][1]
@@ -23,9 +29,11 @@
 ## Mdnotes Default Template.md
 ```
 ---
-{{collections}}
 {{citekey}}
+publicationTitle: {{publicationTitle}}
+{{callNumber}}
 {{tags}}
+{{collections}}
 ---
 # Meta Data
 |                                  |                         |
@@ -77,15 +85,19 @@
 | extensions.mdnotes.placeholder.tags           | `{"content":"{{bullet}} Tags: {{field_contents}}", "field_contents": "#{{content}}", "link_style": "no-links", "list_separator": ", ", "remove_spaces": "true"}` | `{"content":"tags: {{field_contents}}", "field_contents": "{{content}}", "link_style": "no-links", "list_separator": ", ", "remove_spaces": "true"}` |
 | extensions.mdnotes.placeholder.title          | `{"content":"# {{field_contents}}", "field_contents": "{{content}}", "link_style": "no-links"}`                                                                  | `{"content":"{{field_contents}}", "field_contents": "{{content}}", "link_style": "no-links"}`                                                        |
 | extensions.mdnotes.html2md.default.bullet     | `*`                                                                                                                                                              |                                                                                                                                                      |
+|                                               |                                                                                                                                                                  |                                                                                                                                                      |
 
 
 ### 添加条目
-| 条目                                               | 类型   | 键值                                                                                          |
-| -------------------------------------------------- | ------ | --------------------------------------------------------------------------------------------- |
-| extensions.mdnotes.placeholder.shortTitle          | string | `{"content":"{{field_contents}}", "field_contents": "{{content}}", "link_style": "no-links"}` |
-| extensions.mdnotes.placeholder.DOI                 | string | `{"content":"{{field_contents}}", "field_contents": "{{content}}", "link_style": "no-links"}` |
-| extensions.mdnotes.placeholder.journalAbbreviation | string | `{"content":"{{field_contents}}", "field_contents": "{{content}}", "link_style": "no-links"}` |
-| extensions.mdnotes.placeholder.publicationTitle    | string | `{"content":"{{field_contents}}", "field_contents": "{{content}}", "link_style": "no-links"}` |
+| 条目                                               | 类型   | 键值                                                                                                                                               |
+| -------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| extensions.mdnotes.placeholder.shortTitle          | string | `{"content":"{{field_contents}}", "field_contents": "{{content}}", "link_style": "no-links"}`                                                      |
+| extensions.mdnotes.placeholder.DOI                 | string | `{"content":"{{field_contents}}", "field_contents": "{{content}}", "link_style": "no-links"}`                                                      |
+| extensions.mdnotes.placeholder.journalAbbreviation | string | `{"content":"{{field_contents}}", "field_contents": "{{content}}", "link_style": "no-links"}`                                                      |
+| extensions.mdnotes.placeholder.publicationTitle    | string | `{"content":"{{field_contents}}", "field_contents": "{{content}}", "link_style": "no-links"}`                                                      |
+| extensions.mdnotes.placeholder.callNumber          | string | `{"content":"IF: {{field_contents}}", "field_contents": "{{content}}", "link_style": "no-links", "list_separator": ", ", "remove_spaces": "true"}` | 
+
+
 
 
 ## zotfile
@@ -112,7 +124,22 @@
 
 
 
-
+# 部分Q&A
+Q: 目前我用的zotero-obsidian是猫哥教程中的基于mdnotes的方式，zotero links和URL可以正常跳转，但注释不行（highlights and annotations）；用您教程中的设置方式，将File organization设置为single file，点creat full export note生成的笔记就有可跳转的Extracted annotations，这个区别是在哪里呢？
+A: 区别在于，fullexport将注释生成并导出到一个文件里，sqlite模式需要单独生成各个子文件，sqlite按理更应该使用batch导出，可以到处若干note文件以及一个metadata一个汇总，fullexport会直接生成单一文件并在下面写入note，相对来说，fullexport更适合阅读而sqlite则更适合管理编辑。
+***
+Q: 点击creat full export note生成的ob笔记显示不能找到元数据，但export to markdown可以，这个是为什么呀？
+A: 如果不用能找到元数据是指[[。。。。。#METADATA]]不存在这个的话，考虑没抄对或者模板设置不对。
+***
+Q: Highlights and annotations条目下仅显示注释的名称和时间，但仅是文本无法跳转其实就没意义了，要删除的话是需要改模板吗？
+A: 同上
+***
+Q: 改模板的话，您教程中的两个模板是如何导入的？我没找到导入的路径。。
+A: 我最开始的图片里设置了模板文件夹，文件名是对应模板的二级标题，放在那里即可(注意不要变成`XXX.md.md`这样的乌龙命名...)
+***
+Q: 猫哥的mdnotes的默认导出模板和您的模板是兼容的还是您的模板是覆盖的？
+A: 我这个是用猫哥mdnotes插件上调整了样式参数，所以严格意义上来说是依赖于猫哥模板存在的
+***
 
 
 
