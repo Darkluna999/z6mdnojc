@@ -15,7 +15,7 @@ tags: Software/Obsidian
 2. 提取: 方法并列
 	*  IF Max Pro插件：工具 --> 提取pdf注释
 	由于是调用zotfile提取pdf批注生成annotation，具体样式自定义详见[[zotero样式自定调节#zotfile]]
-	![zotero IF Max Pro-zotfile拉取注释][5]
+	 ![zotero IF Max Pro-zotfile拉取注释][5]
 	* 由于zotfile在zotero6隐藏了提取pdf批注生成annotation的选项，我们需要使用zotilo插件拉出这项功能：工具 --> zotilo首选项 --> 快捷键列表 --> extaract annotations zotfile设置快捷键，具体样式自定义详见[[zotero样式自定调节#zotfile]]
 	![zotfile设置快捷键zotfile拉取注释][6]
 	* 自带阅读器提取批注导出基于html语法如需美化请自行添加对应css或[[zotero样式自定调节#zotero原生提取]]
