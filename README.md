@@ -3,7 +3,7 @@ date: 2022年03月19
 uid: 2022-03-19-0351
 tags: Software/Obsidian 
 ---
-<font color=red>我是红色</font>
+<font size="7">7号字 最大</font>
 # 前置设置
 此处路径自定义，如需使用模板需将模板放在模板文件夹
  ![mdnote初始设置][1]
