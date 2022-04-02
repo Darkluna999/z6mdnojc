@@ -3,6 +3,7 @@ date: 2022年03月19
 uid: 2022-03-19-0351
 tags: Software/Obsidian 
 ---
+
 # 前置设置
 此处路径自定义，如需使用模板需将模板放在模板文件夹
  ![mdnote初始设置][1]
@@ -10,6 +11,9 @@ tags: Software/Obsidian
 # 使用步骤
 1. 批注: 方法并列
 	* zotero6内置阅读器编辑修改后：**文件 --> store Annotations**
+		* 注意：Zotero6 Beta 版本移除了 store Annotations 选项，目前解决方案如下：
+			* Zoteo IF Pro Max 的 `工具 --> 存储注释至 PDF`功能
+			* Zotero 自带的 File --> Save As 另存为功能
 	* 其他pdf阅读/编辑器中对pdf文件进行批注修改保存后
 2. 提取: 方法并列
 	*  IF Max Pro插件：工具 --> 提取pdf注释
@@ -128,7 +132,7 @@ Q: 目前我用的zotero-obsidian是猫哥教程中的基于mdnotes的方式，z
 A: 区别在于，fullexport将注释生成并导出到一个文件里，sqlite模式需要单独生成各个子文件，sqlite按理更应该使用batch导出，可以到处若干note文件以及一个metadata一个汇总，fullexport会直接生成单一文件并在下面写入note，相对来说，fullexport更适合阅读而sqlite则更适合管理编辑。
 ***
 Q: 点击creat full export note生成的ob笔记显示不能找到元数据，但export to markdown可以，这个是为什么呀？
-A: 如果不用能找到元数据是指[[。。。。。#METADATA]]不存在这个的话，考虑没抄对或者模板设置不对。
+A: 如果不用能找到元数据是指[[../../AADEL/。。。。。#METADATA]]不存在这个的话，考虑没抄对或者模板设置不对。
 ***
 Q: Highlights and annotations条目下仅显示注释的名称和时间，但仅是文本无法跳转其实就没意义了，要删除的话是需要改模板吗？
 A: 同上
