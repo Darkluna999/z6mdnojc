@@ -124,7 +124,11 @@ obsidian 自带的yaml区metadata默认仅显示别名alias以及tag，很不方
 3. 文件输出: 条目右键 --> Mdnotes --> create full export note
 
 ## 使用Ex (我的工作流)
-
+就总有人问我是怎么用的....贴上来
+反正问得话一定是在用 OB 才会问
+所以我干脆用 mermaid 格式写了
+gitee 不支持-复制 OB 里就能看懂了
+```text
 ```mermaid
 graph TB
 id1(PubMed/Google/知网)
