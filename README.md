@@ -61,13 +61,7 @@ publicationTitle: {{publicationTitle}}
 {{noteContent}}
 ```
 
-
-***
-# **<center> 到这你就可以用了,下边是进阶</center>**
-***
-
-
-# 高级样式
+# 样式设置
 - **(建议)** 开启设置编辑器-Zotero首选项 -> 高级 -> 设置编辑器
   ![][3]
 - **(不建议)** 或者 **Windows的资源管理器** 里访问 `%SystemDrive%\Users\%UserName%\AppData\Roaming\Zotero\Zotero\Profiles`这里不同设备会有 **不同的个人路径** 进入之后打开`prefs.js`文件进行编辑
@@ -124,9 +118,14 @@ publicationTitle: {{publicationTitle}}
 | extensions.zotero.annotations.noteTemplates.highlight | `<p></br>{{highlight quotes='true'}} {{citation}} {{comment}}</p>` | `<p>* {{highlight quotes='true'}} {{citation}}</br>> {{comment}}</p>` |
 
 
+# ob 显示设置
+因为上述将很多键值输入到了yaml区域所以我们需要让他显示
+obsidian 自带的yaml区metadata默认仅显示别名alias以及tag，很不方便
+方案如下：
+1. (不推荐)设置-编辑器-显示front-matter
+2. (推荐)安装插件metatable，obsidian第三方市场有，但需要科学访问，如果不方便的话，B站UP-Johnny老师做了汇总-->[Airtable - OB社区插件汇总 - Johnny整理 - 每周更新 - B站 Johnny学](https://airtable.com/shrdmp10Lxmf5Wmgl/tblJqnWpcKURTjysX)
 
-
-
+***
 # 部分Q&A
 Q: 目前我用的zotero-obsidian是猫哥教程中的基于mdnotes的方式，zotero links和URL可以正常跳转，但注释不行（highlights and annotations）；用您教程中的设置方式，将File organization设置为single file，点creat full export note生成的笔记就有可跳转的Extracted annotations，这个区别是在哪里呢？
 A: 区别在于，fullexport将注释生成并导出到一个文件里，sqlite模式需要单独生成各个子文件，sqlite按理更应该使用batch导出，可以到处若干note文件以及一个metadata一个汇总，fullexport会直接生成单一文件并在下面写入note，相对来说，fullexport更适合阅读而sqlite则更适合管理编辑。
@@ -141,14 +140,14 @@ Q: 改模板的话，您教程中的两个模板是如何导入的？我没找�
 A: 我最开始的图片里设置了模板文件夹，文件名是对应模板的二级标题，放在那里即可(注意不要变成`XXX.md.md`这样的乌龙命名...)
 ***
 Q: 猫哥的mdnotes的默认导出模板和您的模板是兼容的还是您的模板是覆盖的？
-A: 我这个是用猫哥mdnotes插件上调整了样式参数，所以严格意义上来说是依赖于猫哥模板存在的
+A: 我这个是用猫哥mdnotes插件上调整了样式参数，所以严格意义上来说可能是依赖于猫哥模板存在的（但是最新版mdnote也已经可以用了）
 ***
 
 
 
 
 
-
+/end
  **!!!下边是base64区!!!不要在源代码模式下往下翻!!!**
 <!--不要翻-->
 <!--不要翻-->
