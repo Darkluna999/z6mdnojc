@@ -161,9 +161,9 @@ end
 subgraph 归档处理
 
 6-->7("dataview筛选<br>yaml值:IF/publication/tags/Topic...<br>或<br>文件基础属性:创建/修改时间/路径...<br>等")
-7-->chartview绘图总结
+7-->chartview绘制图表总结
 7-->8(指定颜色色标题<br>进行块预览汇总)
-
+7-->9(cross-Reference Nevigation<br>标签过滤查询)
 end
 ```
 ````
