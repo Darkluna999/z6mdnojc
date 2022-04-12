@@ -82,7 +82,7 @@ publicationTitle: {{publicationTitle}}
 | ---------------------------------------------------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | extensions.zotfile.pdfExtraction.formatAnnotationNote      | `<p><i>%(content) (<a href="%(uri)">note on p.%(page)</a>)</i></p><br>` | `<p>&gt; %(content)</p><br>`                                                   |
 | extensions.zotfile.pdfExtraction.formatAnnotationHighlight | `<p>"%(content)" (%(cite))</p>`                                         | `<p>* "%(content)"<a href="%(uri)">p.%(page)</a></p>`                       |
-| extensions.zotfile.pdfExtraction.formatNoteTitleColor      | `<p><b>%(color) Annotations (%(date))</b></p>`                          | `<p><h2><b><font color="%(color)">%(color) Annotations</font></b></h2></p>#%(color)` |
+| extensions.zotfile.pdfExtraction.formatNoteTitleColor      | `<p><b>%(color) Annotations (%(date))</b></p>`                          | `<p><h2><b><font color="%(color)">%(color) Annotations</font></b></h2></p>` |
 | extensions.zotfile.pdfExtraction.colorNotes                | `false`                                                                 | `true`                                                                      |
 
 ### zotero原生提取
