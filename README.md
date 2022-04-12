@@ -128,65 +128,45 @@ obsidian 自带的yaml区metadata默认仅显示别名alias以及tag，很不方
 反正问得话一定是在用 OB 才会问
 所以我干脆用 mermaid 格式写了
 gitee 不支持-复制 OB 里就能看懂了
-```text
+````text
 ```mermaid
 graph TB
-id1(PubMed/Google/知网)
-id2(获取文献/DOI等)
-id3(导入文献)
-id4(阅读\内置批注)
-id5(保存到PDF)
-id6(颜色Annotations)
-id7(阅读\外部批注)
-id8(md1)
-id9(Idea)
+subgraph 条目编辑设置
+抓取导入文献-->匹配元数据
+匹配元数据-->条目设置完成
+end
+subgraph 阅读批注
+条目设置完成-->外置阅读器
+条目设置完成-->内置阅读器
 
-    subgraph Edge 等浏览器
-    id1
-    --Zotero Connector-->
-    id2
-    end
-    subgraph Zotero
-        id2
-        -->
-        id3
-        ---->
-        id4
-        --604及之前: Zotero File-Store...<br>通用推荐: IF插件保存PDF<br>-->
-        id5
-        --IF插件提取-->
-        id6
-    end
-    subgraph Acrobat等浏览器
-        id3
-        -.->
-        id7
-        -.
-        CTRL+S
-        .->
-        id5
-    end    
-    subgraph OB
-        id6
-        --mdnote-->
-            id8
-        id6
-        --mdnote-->
-            md2
-        id6
-        --mdnote-->
-            md...
-        id8
-        --颜色块/标签<br>双链分类汇总-->
-        id9
-        md2
-        --颜色块/标签<br>双链分类汇总-->
-        id9
-        md...
-        --颜色块/标签<br>双链分类汇总-->
-        id9
-    end
+外置阅读器-->1("十色批注<br>(红|黄|蓝|绿|黑|白|青|灰|橙|洋红)<br>理论上16色|常用10色")---->外置阅读完毕
+
+不同颜色指代不同主题-->0("可在注释评论栏<br>使用#tag的方式<br>添加批注标签")
+
+内置阅读器-->2("四色批注<br>(红|黄|蓝|绿)<br>【注意zotero内置的紫色<br>会被识别为蓝色<br>因为它确实在蓝色谱】")---->内置阅读完毕
+
+end
+
+subgraph 导出归档
+外置阅读完毕-->ctrl+s-->保存注释到PDF文件内
+内置阅读完毕--6.0.4及之前版本---->3(file-store)-->保存注释到PDF文件内
+内置阅读完毕--全版本通用-->4(IF Pro Max<br>保存注释到PDF)-->保存注释到PDF文件内 
+保存注释到PDF文件内--->zotfile+zotilo快捷键提取注释--->提取注释为annotation
+保存注释到PDF文件内--->5(IF Pro Max 提取PDF注释)--->提取注释为annotation
+保存注释到PDF文件内-->Zotero内置提取PDF注释-->开启背景高亮-->提取注释为annotation
+提取注释为annotation-->右键菜单-Mdnotes-->6(create full export note)
+end
+
+
+subgraph 归档处理
+
+6-->7("dataview筛选<br>yaml值:IF/publication/tags/Topic...<br>或<br>文件基础属性:创建/修改时间/路径...<br>等")
+7-->chartview绘图总结
+7-->8(指定颜色色标题<br>进行块预览汇总)
+
+end
 ```
+````
 
 ***
 # 部分Q&A
