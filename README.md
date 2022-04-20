@@ -126,6 +126,7 @@ obsidian 自带的yaml区metadata默认仅显示别名alias以及tag，很不方
 所以我干脆用 mermaid 格式写了
 gitee 不支持-复制 OB 里就能看懂了
 
+````
 ```mermaid
 graph TB
 subgraph 条目编辑设置
