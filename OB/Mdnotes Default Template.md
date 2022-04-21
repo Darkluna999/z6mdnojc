@@ -1,7 +1,7 @@
 ---
 citekey: {{citekey}}
 publicationTitle: {{publicationTitle}}
-callNumber: {{callNumber}}
+IF: {{callNumber}}
 tags: {{tags}}, Zotero
 topics: {{collections}}
 category: ZoteroNote
