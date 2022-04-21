@@ -12,12 +12,14 @@ tags: Software/Obsidian
  ![mdnote初始设置][1]
 ## 模板
 ### OB模板
-[OB Default](https://gitee.com/darkluna999/z6mdnojc/blob/master/OB/Mdnotes Default Template.md)
-[OB Note](https://gitee.com/darkluna999/z6mdnojc/blob/master/OB/Zotero Note Template.md)
+[>>OB Default](https://gitee.com/darkluna999/z6mdnojc/blob/master/OB/Mdnotes%20Default%20Template.md)
+
+[>>OB Note](https://gitee.com/darkluna999/z6mdnojc/blob/master/OB/Zotero%20Note%20Template.md)
 
 ### Logseq模板
-[Logseq Default](https://gitee.com/darkluna999/z6mdnojc/blob/master/Logseq/Mdnotes Default Template.md)
-[Logseq Note](https://gitee.com/darkluna999/z6mdnojc/blob/master/Logseq/Zotero Note Template.md)
+[>>Logseq Default](https://gitee.com/darkluna999/z6mdnojc/blob/master/Logseq/Mdnotes%20Default%20Template.md)
+
+[>>Logseq Note](https://gitee.com/darkluna999/z6mdnojc/blob/master/Logseq/Zotero%20Note%20Template.md)
 
 ## 样式设置
 - **(建议)** 开启设置编辑器-Zotero首选项 -> 高级 -> 设置编辑器
