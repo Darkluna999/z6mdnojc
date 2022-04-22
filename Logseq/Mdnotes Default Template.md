@@ -1,9 +1,16 @@
 ---
 citekey::{{citekey}}
+
 publicationTitle::{{publicationTitle}}
+
 IF::{{callNumber}}
+
+star::{{rights}}
+
 tags::{{tags}}, Zotero
+
 topics::{{collections}}
+
 category::ZoteroNote
 ---
 # Meta Data
