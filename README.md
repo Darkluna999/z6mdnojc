@@ -5,9 +5,9 @@ tags: Software/Obsidian
 ---
 > 前排致谢:
 
-> **感谢常驻 Ⅰ/Ⅲ 群的热心群友:*@小新* 大佬 对于内置模板魔改进行的打磨与帮助!!!**
+>  **感谢常驻 Ⅰ/Ⅲ 群的热心群友:*@小新* 大佬 对于内置模板魔改进行的打磨与帮助!!!**
 
-> **感谢 Ⅲ 群的热心群友:*@阿韭* 大佬 对于 LogSeq 模板魔改进行的建议与推进!!!**
+>  **感谢 Ⅲ 群的热心群友:*@阿韭* 大佬 对于 LogSeq 模板魔改进行的建议与推进!!!**
 
 # 前置设置
 此处路径自定义，需下载对应软件模板文件并放在模板文件夹
@@ -37,7 +37,7 @@ tags: Software/Obsidian
 | extensions.mdnotes.placeholder.cloudLibrary   | `{"content":"{{field_contents}}", "field_contents": "[Cloud library]({{content}})"}` | `{"content":"{{bullet}} {{field_contents}}", "field_contents": "[Cloud library]({{content}})"}` |
 | extensions.mdnotes.placeholder.collections    | `{"content":"{{field_contents}}", "field_contents": "{{content}}", "link_style": "no-links", "list_separator": ", "}` | `{"content":"{{bullet}} Topics: {{field_contents}}", "field_contents": "{{content}}", "link_style": "wiki", "list_separator": ", "}` |
 | extensions.mdnotes.placeholder.localLibrary   | `{"content":"{{field_contents}}", "field_contents": "[Local library]({{content}})"}` | `{"content":"{{bullet}} {{field_contents}}", "field_contents": "[Local library]({{content}})"}` |
-| extensions.mdnotes.placeholder.notes          | `{"content":"# Highlights and Annotations", "field_contents": "{{content}}", "link_style": "no-links", "list_separator": "\n"}` | `{"content":"## Notes\n\n- {{field_contents}}", "field_contents": "{{content}}", "link_style": "wiki", "list_separator": "\n- "}` |
+| extensions.mdnotes.placeholder.notes          | `{"content":"# Notes", "field_contents": "{{content}}", "link_style": "no-links", "list_separator": "\n"}	` | `{"content":"## Highlights and Annotations\n\n- {{field_contents}}", "field_contents": "{{content}}", "link_style": "wiki", "list_separator": "\n- "}` |
 | extensions.mdnotes.placeholder.pdfAttachments | `{"content":"## PDF Attachments\n- {{field_contents}}", "field_contents": "{{content}}", "list_separator": "\n- "}` | `{"content":"{{bullet}} PDF Attachments\n\t- {{field_contents}}", "field_contents": "{{content}}", "list_separator": "\n\t- "}` |
 | extensions.mdnotes.placeholder.related        | `{"content":"## Related\n- {{field_contents}}", "link_style": "wiki", "list_separator": "\n-  "}` | `{"content":"{{bullet}} Related: {{field_contents}}", "link_style": "wiki", "list_separator": ", "}` |
 | extensions.mdnotes.placeholder.tags           | `{"content":"{{field_contents}}", "field_contents": "{{content}}", "link_style": "no-links", "list_separator": ", ", "remove_spaces": "true"}` | `{"content":"{{bullet}} Tags: {{field_contents}}", "field_contents": "#{{content}}", "link_style": "no-links", "list_separator": ", ", "remove_spaces": "true"}` |
