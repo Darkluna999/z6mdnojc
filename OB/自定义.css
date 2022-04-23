@@ -1,0 +1,15 @@
+/* 表格居中 */
+
+table {
+    margin: auto;
+}
+
+
+/* 隐藏expander代码块元素 */
+
+.language-expander {
+    display: none
+}
+
+
+/*  */
