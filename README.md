@@ -185,7 +185,8 @@ obsidian 自带的yaml区metadata默认仅显示别名alias以及tag，很不方
 有什么相关的改进，欢迎加群讨论...
 群里会及时公布修改了哪些键值...
 请，务必，不要再抄漏了...
-![加群二维码](https://gitee.com/darkluna999/z6mdnojc/blob/master/z6mdnc--二维码.png)
+![加群二维码](https://gitee.com/darkluna999/z6mdnojc/blob/master/z6mdnc--二维码.jpg)
+
 ***
 
  <center ><b>!!!下边是base64区!!!不要在源代码模式下往下翻!!!</b></center>
