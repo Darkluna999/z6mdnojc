@@ -17,7 +17,7 @@ category: ZoteroNote
 
 > [!info]- # Meta Data
 > |                                  |                         |
-> | :------------------------------- | :---------------------- |
+> |:-------------------------------- |:----------------------- |
 > | {{title}}                        | {{publicationTitle}}    |
 > | {{shortTitle}}                   | {{journalAbbreviation}} |
 > | {{localLibrary}}{{cloudLibrary}} | {{DOI}}                 |
@@ -26,8 +26,8 @@ category: ZoteroNote
 
 {{abstractNote}}
 
-{{pdfAttachments}}
-
 {{related}}
+
+{{pdfAttachments}}
 
 {{notes}}

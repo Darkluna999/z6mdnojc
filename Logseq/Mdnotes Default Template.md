@@ -23,9 +23,9 @@ category::ZoteroNote
 
 {{pdfAttachments}}
 
-{{related}}
-
 {{author}}
+
+{{related}}
 
 {{abstractNote}}
 
