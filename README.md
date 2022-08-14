@@ -1,10 +1,6 @@
----
-date: 2022年03月19
-uid: 2022-03-19-0351
-tags: Software/Obsidian 
-
----
 > **许可声明：本仓库及子文件采用GPL 3.0许可，请勿用于商业用途，如转载请遵守GPL 3.0许可协议**
+>
+
 
 ***
 > 前排致谢:
@@ -13,6 +9,8 @@ tags: Software/Obsidian
 
 >  **感谢热心群友:*@墨砚宸* 大佬 对于 LogSeq 模板魔改进行的建议与推进!!!**
 
+> 一些抱怨: 
+> Gitee一直说我md文件内有不合规的，我查不出来，也懒得查就重启了这个GitHub镜像，虽然本来最开始也是在GitHub发布来着，不过大部分国内用户不是不好访问嘛。。。
 
 # 前置设置
 
@@ -22,12 +20,18 @@ tags: Software/Obsidian
 ## 模板
 
 ### OB模板
-
+GitHub:
+[OB Default](https://github.com/darkluna999/z6mdnojc/blob/master/OB/Mdnotes%20Default%20Template.md)
+[OB Note](https://github.com/darkluna999/z6mdnojc/blob/master/OB/Zotero%20Note%20Template.md)
+Gitee:
 [OB Default](https://gitee.com/darkluna999/z6mdnojc/blob/master/OB/Mdnotes%20Default%20Template.md)
 [OB Note](https://gitee.com/darkluna999/z6mdnojc/blob/master/OB/Zotero%20Note%20Template.md)
 
 ### Logseq模板
-
+GitHub:
+[Logseq Default](https://github.com/darkluna999/z6mdnojc/blob/master/Logseq/Mdnotes%20Default%20Template.md)
+[Logseq Note](https://github.com/darkluna999/z6mdnojc/blob/master/Logseq/Zotero%20Note%20Template.md)
+Gitee:
 [Logseq Default](https://gitee.com/darkluna999/z6mdnojc/blob/master/Logseq/Mdnotes%20Default%20Template.md)
 [Logseq Note](https://gitee.com/darkluna999/z6mdnojc/blob/master/Logseq/Zotero%20Note%20Template.md)
 
@@ -94,7 +98,7 @@ tags: Software/Obsidian
 | 条目                                                  | 修改为                                                       | 修改前                                                       |
 | ----------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | extensions.zotero.annotations.noteTemplates.title     | `<h2>({{date}}    {{title}})</h2>`                           | `<h1>{{title}}<br/>({{date}})</h1>`                          |
-| extensions.zotero.annotations.noteTemplates.highlight | ```{{    if color == '#ff6666'}} <h3>⚔️悖论</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp;  {{elseif color == '#a28ae5'}} <h3>📝生词</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp;  {{elseif color == '#2ea8e5'}} <h3>🔬方法</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp;  {{elseif color == '#ffd400'}} <h3>📒背景</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp;  {{elseif color == '#5fb236'}} <h3>🔭前景</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp; {{elseif color == '#ffe6a2'}} <h3>Xodo Yellow</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp;{{elseif color == '#92e8e8'}} <h3>Xodo Cyan</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp;{{elseif color == '#80e5b1'}} <h3>Xodo Green</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp;{{elseif color == '#f1a099'}} <h3>Xodo Red</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp;{{else }}<h3>颜色 --> {{color}} <-- 暂未添加在识别列表</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote><p>请参照<a href="https://gitee.com/darkluna999/z6mdnojc/blob/master/OB/obsidian添加外置颜色并生成键值.xlsx">gitee格式自行添加条目</a>并进行替换</p><HR>{{endif}}``` | `<p></br>{{highlight quotes='true'}} {{citation}} {{comment}}</p>` |
+| extensions.zotero.annotations.noteTemplates.highlight | ```{{    if color == '#ff6666'}} <h3>⚔️悖论</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp;  {{elseif color == '#a28ae5'}} <h3>📝生词</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp;  {{elseif color == '#2ea8e5'}} <h3>🔬方法</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp;  {{elseif color == '#ffd400'}} <h3>📒背景</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp;  {{elseif color == '#5fb236'}} <h3>🔭前景</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp; {{elseif color == '#ffe6a2'}} <h3>Xodo Yellow</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp;{{elseif color == '#92e8e8'}} <h3>Xodo Cyan</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp;{{elseif color == '#80e5b1'}} <h3>Xodo Green</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp;{{elseif color == '#f1a099'}} <h3>Xodo Red</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote>&emsp;{{else }}<h3>颜色 --> {{color}} <-- 暂未添加在识别列表</h3><blockquote><p><span style="background-color: {{color}}80">{{highlight}}</p><p>📍引自：{{citation}}</p>{{if comment}}<p>✒️批注：{{comment}}</p >{{endif}}<p>🏷️标签: #{{tags join=' #'}}</p></blockquote><p>请参照<a href="https://gitee.com/darkluna999/z6mdnojc/blob/master/OB/obsidian添加外置颜色并生成键值.xlsx">gitee格式自行添加条目</a><a href="https://github.com/darkluna999/z6mdnojc/blob/master/OB/obsidian添加外置颜色并生成键值.xlsx">gitee格式自行添加条目</a>并进行替换</p><HR>{{endif}}``` | `<p></br>{{highlight quotes='true'}} {{citation}} {{comment}}</p>` |
 
 
 
@@ -170,10 +174,12 @@ obsidian 自带的yaml区metadata默认仅显示别名alias以及tag，很不方
 ### Obsidian
 
 可以直接输出到ob的库内，而后经过tag筛选/yaml筛选/dataview筛选/块引用进行原子化重组
-
+GitHub:
 [>>Zotero-OB 工作流](https://gitee.com/darkluna999/z6mdnojc/blob/master/OB/Zotero-OB%20工作流.md)
 [>>内置提取后分色模板](https://gitee.com/darkluna999/z6mdnojc/blob/master/OB/内置提取后分色模板.md)
-
+Gitee:
+[>>Zotero-OB 工作流](https://gitee.com/darkluna999/z6mdnojc/blob/master/OB/Zotero-OB%20工作流.md)
+[>>内置提取后分色模板](https://gitee.com/darkluna999/z6mdnojc/blob/master/OB/内置提取后分色模板.md)
 ### Logseq
 
 因为不是很熟悉Logseq...我也不用就没有深挖，给一个大概的思路如下: 
